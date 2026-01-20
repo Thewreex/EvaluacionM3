@@ -1,0 +1,32 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.testimonio {
+    background-color: v.$color-principal;
+}
+
+.testimonio__titulo {
+    color: v.$color-secundario
+}
+
+.testimonio__contenedor_cards {
+    @include m.flex(center, center)
+}
+
+.testimonio__contenedor_imagen {
+    @include m.flex(none, center);
+    width: 18rem;
+}
+
+.testimonio__card_imagen {
+    height: 100px; 
+    width: 100px;
+}
+
+.testimonio__carrusel_boton {
+    background: none; border: none;
+}
+
+.testimonio__carrusel_icono {
+    filter: invert(1);
+}

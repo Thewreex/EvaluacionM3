@@ -1,0 +1,28 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.header {
+  background-color: v.$color-principal;
+
+  &__titulo {
+    font-weight: 700;
+    color: v.$texto-secundario;
+  }
+
+  &__texto {
+    font-weight: 600;
+    color: v.$texto-secundario;
+    
+        &:hover {
+        color: v.$texto-secundario-dark;
+    }
+ }
+}
+
+.header__izquierda {
+    @include m.flex(none, center);
+}
+
+.header__logo {
+   max-height: 56px
+}

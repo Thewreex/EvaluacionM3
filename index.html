@@ -11,17 +11,16 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
 
-  <nav class="navbar navbar-dark bg-dark">
+  <nav class="header navbar navbar-expand-lg">
     <div class="container-fluid">
       <!-- Logo -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
+      <a class=" header__izquierda navbar-brand" href="#">
         <img
           src="img/Logo.png"
           alt="Logo"
-          class="img-fluid"
-          style="max-height: 56px"
+          class="header__logo img-fluid"
         />
-        <span class="ml-2">Agencia Digital</span>
+        <span class="header__titulo ml-2">Agencia Digital</span>
       </a>
 
       <button
@@ -39,19 +38,19 @@
       <div class="collapse navbar-collapse" id="mainNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Servicios</a>
+            <a class="header__texto nav-link" href="#">Servicios</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link">Proyectos</a>
+            <a class="header__texto nav-link">Proyectos</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link">Testimonio</a>
+            <a class="header__texto nav-link">Testimonio</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link">Contacto</a>
+            <a class="header__texto nav-link">Contacto</a>
           </li>
         </ul>
       </div>
@@ -59,128 +58,119 @@
   </nav>
 
   <!--Hero Section-->
-  <div class="hero container-fluid bg-light p-5 position-relative mb-5">
+  <section class="hero container-fluid bg-light">
     <div class="row">
       <div
-        class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center"
+        class="col-12 col-lg-6 hero__texto flex-column "
       >
-        <h1>TITULO</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti
-          architecto vitae, labore adipisci, exercitationem velit nostrum,
-          consectetur ad illum provident perspiciatis. Ad ratione esse est
-          perferendis commodi veritatis repellat iusto.
+        <h1 class="text-left hero__texto hero__texto--titulo">Transformamos Ideas en Experiencias Digitales</h1>
+        <p class="hero__texto hero__texto--parrafo">
+          Somos expertos en desarrollo web, diseño y marketing digital. Ayudamos a
+          empresas como la tuya a destacar en el mercado con soluciones innovadoras
+          y personalizadas.
         </p>
 
-        <button class="btn btn-primary">Texto del boton</button>
+        <button class="hero__boton mb-5 btn btn-primary">Comienza Ahora</button>
       </div>
       <div
-        class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
+        class="col-12 col-lg-6 hero__imagen_contenedor"
       >
         <img
           src="img/ImagenHero.png"
           alt="Imagen Hero Section"
-          class="img-fluid"
-          style="max-width: 350px; min-width: 100px"
+          class="img-fluid hero__imagen"
         />
       </div>
     </div>
 
-    <div class="container mt-5" style="bottom: 100; left: 0; right: 0">
+    <div class="container mt-5 hero__contenedor_cards">
       <div class="row justify-content-center g-4">
         <div class="col-12 col-md-4 col-lg-3 mb-5">
-          <div class="card h-100">
-            <img
-              src="https://placehold.co/40x40"
-              class="img-fluid"
-              style="max-width: 60px"
-              alt="Imagen"
-            />
+          <div class="card h-100 ">
+            <div class="p-2">
+              <img
+                src="img/IconoAjedrez.png"
+                class="hero__card img-fluid"
+                alt="Icono de Estrategia Digital o Ajedrez"
+              />
+            </div>
             <div class="card-body p-3">
-              <h5 class="card-title mb-1">Card title</h5>
-              <p class="card-text mb-0">Some quick example text.</p>
+              <h5 class="card-title mb-1">Estrategia Digital</h5>
+              <p class="card-text mb-0">Planificación estratégica para alcanzar tus objetivos de negocio.</p>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3 mb-5">
           <div class="card h-100">
-            <img
-              src="https://placehold.co/40x40"
-              class="img-fluid"
-              style="max-width: 60px"
-              alt="Imagen"
-            />
+            <div class="p-2">
+              <img
+                src="img/IconoPincel.png"
+                class="hero__card img-fluid"
+                alt="Icono de Diseño Creativo o Pincel"
+              />
+            </div>
             <div class="card-body p-3">
-              <h5 class="card-title mb-1">Card title</h5>
-              <p class="card-text mb-0">Some quick example text.</p>
+              <h5 class="card-title mb-1">Diseño Creativo</h5>
+              <p class="card-text mb-0">Interfaces atractivas y funcionales que cautivan a tu audiencia.</p>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-md-4 col-lg-3 mb-5">
           <div class="card h-100">
-            <img
-              src="https://placehold.co/40x40"
-              class="img-fluid"
-              style="max-width: 60px"
-              alt="Imagen"
-            />
+            <div class="p-2">
+              <img
+                src="img/IconoCodigo.png"
+                class="hero__card img-fluid"
+                alt="Icono de Desarrollo Web o Código"
+              />
+            </div>
             <div class="card-body p-3">
-              <h5 class="card-title mb-1">Card title</h5>
-              <p class="card-text mb-0">Some quick example text.</p>
+              <h5 class="card-title mb-1">Desarrollo a Medida</h5>
+              <p class="card-text mb-0">Soluciones tecnológicas robustas y escalables para tu empresa.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!--Seccion Servicios-->
 
-  <section class="services">
+  <section class="servicios p-5">
     <div
-      class="container-fluid d-flex align-items-center justify-content-center flex-column"
+      class="container-fluid flex-column"
     >
-      <h1>Servicios</h1>
-      <p class="mb-5">Lo que hacemos por ti</p>
+      <h1 class="servicios__titulo mb-5">Servicios</h1>
     </div>
     <div class="container-fluid">
       <div class="row mb-5">
         <div
-          class="container d-flex align-items-center flex-column col-12 col-md-3"
+          class="container servicios__imagen flex-column col-12 col-md-3"
         >
-          <img class="img-fluid" src="https://placehold.co/60x60" alt="" />
-          <h1>Titulo</h1>
-          <p class="text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            quidem sequi, numquam praesentium quod incidunt soluta, enim saepe
-            quos, ea suscipit laboriosam nulla dolorum aspernatur rem quae vitae
-            dicta accusantium.
+          <img class="img-fluid servicios__icono" src="img/IconoLupa.png" alt="Icono de Lupa" />
+          <h1 class="text-center servicios__card_titulo servicios__card_titulo">SEO & SEM</h1>
+          <p class="text-center servicios__card_parrafo">
+            Mejoramos tu visibilidad en buscadores y gestionamos campañas publicitarias efectivas para atraer tráfico cualificado.
           </p>
         </div>
         <div
-          class="container d-flex align-items-center flex-column col-12 col-md-3"
+          class="container servicios__imagen flex-column col-12 col-md-3"
         >
-          <img class="img-fluid" src="https://placehold.co/60x60" alt="" />
-          <h1>Titulo</h1>
-          <p class="text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            quidem sequi, numquam praesentium quod incidunt soluta, enim saepe
-            quos, ea suscipit laboriosam nulla dolorum aspernatur rem quae vitae
-            dicta accusantium.
+          <img class="img-fluid servicios__icono" src="img/IconoMegafono.png" alt="Icono de Megáfono" />
+          <h1 class="text-center servicios__card_titulo servicios__card_titulo">Social Media</h1>
+          <p class="text-center servicios__card_parrafo">
+            Construimos comunidades y gestionamos la reputación de tu marca en las principales redes sociales.
           </p>
         </div>
         <div
-          class="container d-flex align-items-center flex-column col-12 col-md-3"
+          class="container servicios__imagen flex-column col-12 col-md-3"
         >
-          <img class="img-fluid" src="https://placehold.co/60x60" alt="" />
-          <h1>Titulo</h1>
-          <p class="text-center">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-            quidem sequi, numquam praesentium quod incidunt soluta, enim saepe
-            quos, ea suscipit laboriosam nulla dolorum aspernatur rem quae vitae
-            dicta accusantium.
+          <img class="img-fluid servicios__icono" src="img/IconoDocumento.svg" alt="Icono de Documento" />
+          <h1 class="text-center servicios__card_titulo servicios__card_titulo">Content Marketing</h1>
+          <p class="text-center servicios__card_parrafo">
+            Creamos contenido de valor que atrae, educa y retiene a tu audiencia ideal, convirtiendo leads en clientes.
           </p>
         </div>
       </div>
@@ -189,39 +179,30 @@
      <div class="container-fluid">
          <div class="row mb-5">
             <div
-              class="container d-flex align-items-center flex-column col-12 col-md-3"
+              class="container servicios__imagen flex-column col-12 col-md-3"
             >
-              <img class="img-fluid" src="https://placehold.co/60x60" alt="" />
-              <h1>Titulo</h1>
-              <p class="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-                quidem sequi, numquam praesentium quod incidunt soluta, enim saepe
-                quos, ea suscipit laboriosam nulla dolorum aspernatur rem quae vitae
-                dicta accusantium.
+              <img class="img-fluid servicios__icono" src="img/IconoBombilla.svg" alt="Icono de Bombilla" />
+              <h1 class="text-center servicios__card_titulo servicios__card_titulo">Consultoría TI</h1>
+              <p class="text-center servicios__card_parrafo">
+                Te asesoramos en la transformación digital de tu negocio, optimizando procesos con tecnología de punta.
               </p>
             </div>
             <div
-              class="container d-flex align-items-center flex-column col-12 col-md-3"
+              class="container servicios__imagen flex-column col-12 col-md-3"
             >
-              <img class="img-fluid" src="https://placehold.co/60x60" alt="" />
-              <h1>Titulo</h1>
-              <p class="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-                quidem sequi, numquam praesentium quod incidunt soluta, enim saepe
-                quos, ea suscipit laboriosam nulla dolorum aspernatur rem quae vitae
-                dicta accusantium.
+              <img class="img-fluid servicios__icono" src="img/IconoCarrito.png" alt="Icono de Carrito de Compras" />
+              <h1 class="text-center servicios__card_titulo servicios__card_titulo">E-commerce</h1>
+              <p class="text-center servicios__card_parrafo">
+                Desarrollamos tiendas online seguras y optimizadas para maximizar tus ventas y la experiencia de compra.
               </p>
             </div>
             <div
-              class="container d-flex align-items-center flex-column col-12 col-md-3"
+              class="container servicios__imagen flex-column col-12 col-md-3"
             >
-              <img class="img-fluid" src="https://placehold.co/60x60" alt="" />
-              <h1>Titulo</h1>
-              <p class="text-center">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur
-                quidem sequi, numquam praesentium quod incidunt soluta, enim saepe
-                quos, ea suscipit laboriosam nulla dolorum aspernatur rem quae vitae
-                dicta accusantium.
+              <img class="img-fluid" src="img/IconoTelefono.png" alt="Icono de Smartphone" />
+              <h1 class="text-center servicios__card_titulo servicios__card_titulo">Mobile Apps</h1>
+              <p class="text-center servicios__card_parrafo">
+                Diseñamos y desarrollamos aplicaciones móviles nativas e híbridas para iOS y Android.
               </p>
             </div>
           </div>
@@ -231,18 +212,17 @@
 
   <!--Seccion Proyectos-->
 
-  <section class="container-fluid p-5">
+  <section class="proyectos container-fluid p-5">
     <h1 class="text-center mb-5">Nuestros Trabajos</h1>
     <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-8">
         <div class="card position-relative p-0 w-100">
-          <div class="container-fluid bg-dark" style="height: 200px;">            
-          </div>
-          <img src="https://placehold.co/10x10" class="position-relative border border-white" style="width: 75px; top: 20px; left: 10px; margin-top: -50px;" alt="...">
+          <img src="img/EcommerceModa.webp" class="proyectos__card_fondo">            
+          <img src="img/EcommerceModaLogo.png" class="proyectos__card_icono position-relative border border-white" alt="Icono de Tienda o Bolsa de Compra">
           <div class="card-body pt-5">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Rediseño E-commerce Moda</h5>
+            <p class="card-text">Migración y rediseño completo de plataforma de venta online, logrando un aumento del 40% en la tasa de conversión.</p>
+            <a class="proyectos__card_boton btn btn-primary" data-toggle="modal" data-target="#modalProyecto1">Ver Proyecto</a>
           </div>
         </div>
       </div>
@@ -250,25 +230,23 @@
     <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-4">
         <div class="card mb-5 position-relative p-0 w-100">
-          <div class="container-fluid bg-dark" style="height: 200px;">            
-          </div>
-          <img src="https://placehold.co/10x10" class="position-relative border border-white" style="width: 75px; top: 20px; left: 10px; margin-top: -50px;" alt="...">
+          <img src="img/FinanzasPersonales.jpeg" class="proyectos__card_fondo">            
+          <img src="img/FinanzasPersonalesLogo.png" class="proyectos__card_icono position-relative border border-white" alt="Icono de Móvil o Billetera">
           <div class="card-body pt-5">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">App Finanzas Personales</h5>
+            <p class="card-text">Diseño UX/UI para aplicación fintech con más de 100k descargas.</p>
+            <a class="proyectos__card_boton btn btn-primary" data-toggle="modal" data-target="#modalProyecto2">Ver Proyecto</a>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4">
         <div class="card position-relative p-0 w-100">
-          <div class="container-fluid bg-dark" style="height: 200px;">            
-          </div>
-          <img src="https://placehold.co/10x10" class="position-relative border border-white" style="width: 75px; top: 20px; left: 10px; margin-top: -50px;" alt="...">
+          <img src="img/PortalInmobilario.jpg" class="proyectos__card_fondo">            
+          <img src="img/PortalInmobiliarioLogo.png" class="position-relative border border-white proyectos__card_icono"  alt="Icono de Edificio o Casa">
           <div class="card-body pt-5">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Portal Inmobiliario</h5>
+            <p class="card-text">Plataforma web con sistema de reservas y tours virtuales 360°.</p>
+            <a class="proyectos__card_boton btn btn-primary" data-toggle="modal" data-target="#modalProyecto3">Ver Proyecto</a>
           </div>
         </div>
       </div>
@@ -276,118 +254,307 @@
    <div class="row justify-content-center mb-4">
       <div class="col-12 col-md-4">
         <div class="card position-relative p-0 w-100">
-          <div class="container-fluid bg-dark" style="height: 200px;">            
-          </div>
-          <img src="https://placehold.co/10x10" class="position-relative border border-white" style="width: 75px; top: 20px; left: 10px; margin-top: -50px;" alt="...">
+          <img src="img/DashboardCorporativo.webp" class="proyectos__card_fondo">            
+          <img src="img/DashboardCorporativoLogo.png" class="position-relative border border-white proyectos__card_icono" alt="Icono de Gráfica o Dashboard">
           <div class="card-body pt-5">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Dashboard Corporativo</h5>
+            <p class="card-text">Panel de control y analytics para toma de decisiones en tiempo real.</p>
+            <a class="proyectos__card_boton btn btn-primary" data-toggle="modal" data-target="#modalProyecto4">Ver Proyecto</a>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-4">
         <div class="card position-relative p-0 w-100">
-          <div class="container-fluid bg-dark" style="height: 200px;">            
-          </div>
-          <img src="https://placehold.co/10x10" class="position-relative border border-white" style="width: 75px; top: 20px; left: 10px; margin-top: -50px;" alt="...">
+          <img src="img/RebrandingStartup.png" class="proyectos__card_fondo">            
+          <img src="img/RebrandingStartupLogo.png" class="position-relative border border-white proyectos__card_icono"  alt="Icono de Maletín o Identidad">
           <div class="card-body pt-5">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h5 class="card-title">Rebranding Tecnológico</h5>
+            <p class="card-text">Nueva identidad visual y manual de marca para startup de IA.</p>
+            <a class="proyectos__card_boton btn btn-primary" data-toggle="modal" data-target="#modalProyecto5">Ver Proyecto</a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="testimonio">
-    <h1 class="text-center mb-5">Testimonio de nuestros clientes</h1>
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="container-fluid">
-            <div class="row d-flex align-items-center justify-content-center g-5">
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+  <!-- Modal Rediseño Ecommerce -->
+<div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProyecto1Label">Rediseño E-commerce Moda</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+<span aria-hidden="true">&times;</span> 
+ </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/EcommerceModa.webp" class="img-fluid mb-3" alt="Proyecto E-commerce Moda">
+        <h6 class="font-weight-bold">Cliente</h6>
+        <p>Marca de moda emergente con presencia en 5 países de Latinoamérica.</p>
+        
+        <h6 class="font-weight-bold mt-3">Desafío</h6>
+        <p>La plataforma anterior presentaba problemas de rendimiento, una experiencia de usuario confusa y una tasa de abandono de carrito del 78%. El cliente necesitaba una solución moderna que mejorara la conversión y escalara con el crecimiento del negocio.</p>
+        
+        <h6 class="font-weight-bold mt-3">Solución</h6>
+        <p>Realizamos una migración completa a una arquitectura headless commerce, implementando un diseño responsive con enfoque mobile-first. Optimizamos el proceso de checkout reduciéndolo de 5 a 3 pasos, integramos múltiples métodos de pago locales y desarrollamos un sistema de recomendaciones basado en IA.</p>
+        
+        <h6 class="font-weight-bold mt-3">Tecnologías</h6>
+        <p>React, Next.js, Shopify Plus, Stripe, Google Analytics 4, Hotjar</p>
+        
+        <h6 class="font-weight-bold mt-3">Resultados</h6>
+        <ul>
+          <li>40% de aumento en la tasa de conversión</li>
+          <li>Reducción del 52% en el abandono de carrito</li>
+          <li>Mejora del 65% en el tiempo de carga de páginas</li>
+          <li>Incremento del 30% en el ticket promedio</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Finanzas Personales -->
+<div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="modalProyecto2Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProyecto2Label">App Finanzas Personales</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+<span aria-hidden="true">&times;</span> 
+ </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/FinanzasPersonales.jpeg" class="img-fluid mb-3" alt="Proyecto Finanzas Personales">
+        <h6 class="font-weight-bold">Cliente</h6>
+        <p>Startup fintech enfocada en educación financiera para millennials y Gen Z.</p>
+        
+        <h6 class="font-weight-bold mt-3">Desafío</h6>
+        <p>Crear una aplicación móvil que hiciera la gestión financiera personal accesible y atractiva para usuarios sin conocimientos previos, diferenciándose en un mercado saturado de apps bancarias tradicionales.</p>
+        
+        <h6 class="font-weight-bold mt-3">Solución</h6>
+        <p>Diseñamos una experiencia gamificada con onboarding interactivo, visualizaciones de datos intuitivas y un sistema de metas financieras personalizables. Implementamos dark mode, notificaciones inteligentes y sincronización automática con cuentas bancarias mediante Open Banking.</p>
+        
+        <h6 class="font-weight-bold mt-3">Tecnologías</h6>
+        <p>React Native, Firebase, Plaid API, Chart.js, Redux, Figma</p>
+        
+        <h6 class="font-weight-bold mt-3">Resultados</h6>
+        <ul>
+          <li>100,000+ descargas en los primeros 6 meses</li>
+          <li>4.8 estrellas en App Store y Google Play</li>
+          <li>Tasa de retención del 68% a 30 días</li>
+          <li>Tiempo promedio de sesión: 8.5 minutos</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Portal Inmobiliario -->
+<div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="modalProyecto3Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProyecto3Label">Portal Inmobiliario</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+<span aria-hidden="true">&times;</span> 
+ </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/PortalInmobilario.jpg" class="img-fluid mb-3" alt="Proyecto Portal Inmobiliario">
+        <h6 class="font-weight-bold">Cliente</h6>
+        <p>Desarrolladora inmobiliaria con proyectos residenciales de alto valor en zonas premium.</p>
+        
+        <h6 class="font-weight-bold mt-3">Desafío</h6>
+        <p>Durante la pandemia, las visitas presenciales se redujeron drásticamente. El cliente necesitaba una solución digital que permitiera a los compradores potenciales explorar propiedades de forma remota y agendar visitas de manera eficiente.</p>
+        
+        <h6 class="font-weight-bold mt-3">Solución</h6>
+        <p>Desarrollamos un portal inmobiliario con tours virtuales 360° de alta calidad, sistema de reservas en tiempo real integrado con Google Calendar, filtros avanzados de búsqueda, calculadora de hipoteca y chat en vivo con asesores. Implementamos un CRM personalizado para gestión de leads.</p>
+        
+        <h6 class="font-weight-bold mt-3">Tecnologías</h6>
+        <p>Vue.js, Node.js, MongoDB, Matterport SDK, Twilio, Google Maps API</p>
+        
+        <h6 class="font-weight-bold mt-3">Resultados</h6>
+        <ul>
+          <li>85% de reducción en visitas no calificadas</li>
+          <li>3,500 tours virtuales realizados en el primer año</li>
+          <li>Aumento del 45% en conversión de leads a ventas</li>
+          <li>Reducción del 60% en tiempo del ciclo de venta</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Dashboard Corporativo -->
+<div class="modal fade" id="modalProyecto4" tabindex="-1" aria-labelledby="modalProyecto4Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProyecto4Label">Dashboard Corporativo</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+<span aria-hidden="true">&times;</span> 
+ </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/DashboardCorporativo.webp" class="img-fluid mb-3" alt="Dashboard Corporativo">
+        <h6 class="font-weight-bold">Cliente</h6>
+        <p>Empresa de logística con operaciones en 12 países y más de 500 empleados.</p>
+        
+        <h6 class="font-weight-bold mt-3">Desafío</h6>
+        <p>Los datos críticos del negocio estaban dispersos en múltiples sistemas sin integración. Los ejecutivos no tenían visibilidad en tiempo real de KPIs clave, lo que retrasaba la toma de decisiones estratégicas.</p>
+        
+        <h6 class="font-weight-bold mt-3">Solución</h6>
+        <p>Creamos un dashboard corporativo centralizado que integra datos de ventas, operaciones, finanzas y recursos humanos. Implementamos visualizaciones interactivas, alertas automáticas, reportes personalizables y capacidad de drill-down para análisis detallado. El sistema incluye predicciones con machine learning.</p>
+        
+        <h6 class="font-weight-bold mt-3">Tecnologías</h6>
+        <p>Angular, Python, PostgreSQL, Power BI, Apache Kafka, TensorFlow, AWS</p>
+        
+        <h6 class="font-weight-bold mt-3">Resultados</h6>
+        <ul>
+          <li>Reducción del 70% en tiempo de generación de reportes</li>
+          <li>Mejora del 35% en precisión de forecasting</li>
+          <li>ROI del 280% en el primer año</li>
+          <li>Adopción del 95% entre usuarios objetivo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Rebranding Tecnologico -->
+<div class="modal fade" id="modalProyecto5" tabindex="-1" aria-labelledby="modalProyecto5Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalProyecto5Label">Rebranding Tecnológico</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+<span aria-hidden="true">&times;</span> 
+ </button>
+      </div>
+      <div class="modal-body">
+        <img src="img/RebrandingStartup.png" class="img-fluid mb-3" alt="Rebranding Tecnológico">
+        <h6 class="font-weight-bold">Cliente</h6>
+        <p>Startup de inteligencia artificial especializada en automatización de procesos empresariales.</p>
+        
+        <h6 class="font-weight-bold mt-3">Desafío</h6>
+        <p>La marca original transmitía una imagen amateur que no reflejaba la sofisticación tecnológica de sus productos. Necesitaban reposicionarse para competir con empresas establecidas y atraer inversión de capital de riesgo.</p>
+        
+        <h6 class="font-weight-bold mt-3">Solución</h6>
+        <p>Desarrollamos una identidad de marca completa que comunica innovación y confiabilidad. Creamos un nuevo logotipo, paleta de colores, tipografía, sistema de iconografía, templates para presentaciones, papelería corporativa y guidelines para redes sociales. Diseñamos un sitio web institucional con animaciones que explican la tecnología de forma accesible.</p>
+        
+        <h6 class="font-weight-bold mt-3">Tecnologías</h6>
+        <p>Adobe Creative Suite, Figma, After Effects, Webflow, Lottie</p>
+        
+        <h6 class="font-weight-bold mt-3">Resultados</h6>
+        <ul>
+          <li>Levantamiento de $2.5M en ronda Serie A</li>
+          <li>Aumento del 120% en tráfico web orgánico</li>
+          <li>Mejora del 85% en percepción de marca (brand tracking)</li>
+          <li>Incremento del 200% en engagement en LinkedIn</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<section class="testimonio py-5">
+  <h1 class="text-center testimonio__titulo mb-5">Testimonio de nuestros clientes</h1>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Primer slide -->
+      <div class="carousel-item active">
+        <div class="container-fluid">
+          <div class="row testimonio__contenedor_cards g-5">
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 1">
+              <div class="card-body">
+                <p class="card-text">"Gracias a su estrategia digital, nuestro tráfico web aumentó un 70% en solo 3 meses. ¡Excelente equipo!"</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row d-flex align-items-center justify-content-center g-5">
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 2">
+              <div class="card-body">
+                <p class="card-text">"El rediseño de nuestra app mejoró significativamente la experiencia de usuario y aumentó las descargas. ¡Muy recomendable!"</p>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="container-fluid">
-            <div class="row d-flex align-items-center justify-content-center g-5">
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-              </div>
-              <div class="card mx-5 mb-5 p-2 d-flex align-items-center" style="width: 18rem;">
-                <img src="img/UsuarioIcono.png" style="height: 100px; width: 100px;" class="card-img-top " alt="...">
-                <div class="card-body">
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 3">
+              <div class="card-body">
+                <p class="card-text">"Su enfoque creativo en el diseño nos permitió destacar frente a la competencia. Profesionales y comprometidos."</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev border-none" style="background: none; border: none;" type="button" data-target="#carouselExampleControls" data-slide="prev">
-        <span class="carousel-control-prev-icon" style="filter: invert(1);" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </button>
-      <button class="carousel-control-next" style="background: none; border: none;" type="button" data-target="#carouselExampleControls" data-slide="next">
-        <span class="carousel-control-next-icon" style="filter: invert(1);" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </button>
+
+      <!-- Segundo slide -->
+      <div class="carousel-item">
+        <div class="container-fluid">
+          <div class="row testimonio__contenedor_cards g-5">
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 4">
+              <div class="card-body">
+                <p class="card-text">"Su consultoría TI nos ayudó a optimizar procesos internos y ahorrar tiempo en un 30%. Muy satisfechos."</p>
+              </div>
+            </div>
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 5">
+              <div class="card-body">
+                <p class="card-text">"La implementación de nuestra tienda online fue impecable. Las ventas crecieron desde la primera semana."</p>
+              </div>
+            </div>
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 6">
+              <div class="card-body">
+                <p class="card-text">"El desarrollo a medida nos permitió automatizar tareas clave y mejorar la productividad del equipo."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tercer slide -->
+      <div class="carousel-item">
+        <div class="container-fluid">
+          <div class="row testimonio__contenedor_cards g-5">
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 7">
+              <div class="card-body">
+                <p class="card-text">"El rebranding de nuestra marca nos ayudó a conectar mejor con nuestros clientes y aumentar la confianza en nuestros productos."</p>
+              </div>
+            </div>
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 8">
+              <div class="card-body">
+                <p class="card-text">"El dashboard corporativo nos ofrece información en tiempo real que facilita la toma de decisiones estratégicas."</p>
+              </div>
+            </div>
+            <div class="card mx-5 mb-5 p-2 testimonio__contenedor_imagen">
+              <img src="img/UsuarioIcono.png" class="testimonio__card_imagen card-img-top" alt="Cliente 9">
+              <div class="card-body">
+                <p class="card-text">"Excelente trabajo en mobile apps. Nuestra app ahora es rápida, intuitiva y con un diseño moderno que encanta a los usuarios."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
-  </section>
+
+    <button class="carousel-control-prev border-none testimonio__carrusel_boton" type="button" data-target="#carouselExampleControls" data-slide="prev">
+      <span class="carousel-control-prev-icon testimonio__carrusel_icono" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next testimonio__carrusel_boton" type="button" data-target="#carouselExampleControls" data-slide="next">
+      <span class="carousel-control-next-icon testimonio__carrusel_icono" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+</section>
+
 
 
   <!--Contactanos-->
@@ -408,7 +575,7 @@
           <label for="exampleBody">Cuerpo</label>
           <textarea class="form-control" placeholder="Cuerpo" aria-label="With textarea"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button type="submit" class=" contacto__boton btn btn-primary">Enviar</button>
       </form>
     </div>
   </section>
@@ -417,7 +584,7 @@
   <div class="container">
     <div class="row">
       <div class="col text-center">
-        <small>© 2026 DigitalAgency. Todos los derechos reservados.</small>
+        <small>© 2026 Agencia Digital. Todos los derechos reservados.</small>
       </div>
     </div>
   </div>

@@ -1,0 +1,21 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+.proyectos {
+    background-color: v.$color-secundario;
+}
+
+.proyectos__card_fondo {
+    height: 200px;
+}
+
+.proyectos__card_boton {
+    @include m.boton;
+}
+
+.proyectos__card_icono {
+    width: 75px; 
+    top: 20px; 
+    left: 10px; 
+    margin-top: -50px;
+}

@@ -1,0 +1,5 @@
+@use "../utilities/mixins" as m;
+
+.contacto__boton {
+    @include m.boton;
+}

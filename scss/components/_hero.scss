@@ -1,0 +1,42 @@
+@use "../utilities/variables" as v;
+@use "../utilities/mixins" as m;
+
+
+.hero{
+    padding: 50px;
+}
+.hero__texto {
+    @include m.flex(center, flex-start);
+    gap: 20px;
+
+    &--titulo {
+        color: v.$texto-principal;
+    }
+
+    &--parrafo {
+        color: v.$texto-principal-light
+    }
+}
+
+.hero__imagen_contenedor {
+    @include m.flex(center, center);
+}
+
+.hero__imagen {
+    max-width: 350px; 
+    min-width: 100px
+}
+
+.hero__contenedor_cards {
+    bottom: 100; 
+    left: 0; 
+    right: 0
+}
+
+.hero__card {
+    max-width: 40px
+}
+
+.hero__boton {
+    @include m.boton;
+}

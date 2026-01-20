@@ -1,0 +1,24 @@
+@use "variables" as v;
+
+@mixin flex ($justify-content: none, $align-items: none) {
+    display: flex;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+@mixin hover-color($color) {
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $color;
+  }
+}
+
+@mixin boton {
+    background-color: v.$color-principal;
+    border: none;
+
+    &:hover {
+        background-color: darken($color: v.$color-principal, $amount: 10%);
+    }
+}
